@@ -1,0 +1,22 @@
+spec_generator/
+├── templates/
+│   ├── index.html
+│   ├── preview.html
+│   ├── components/
+│   │   ├── technical_data.html
+│   │   ├── light_beam_table.html
+│   │   └── product_diagram.html
+│   └── css/
+│       └── style.css
+├── static/
+│   ├── css/
+│   │   ├── style.css
+│   └── spec_sheet.css
+│   ├── js/
+│   │   └── main.js
+│   └── images/
+│       └── icons/
+├── app.py
+└── pdf_generator.py
+└── config/
+    └── spec_templates.yaml 

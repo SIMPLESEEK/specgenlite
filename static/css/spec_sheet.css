@@ -1,0 +1,299 @@
+.spec-form {
+    max-width: none;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.form-section h3 {
+    margin: -20px -20px 15px -20px;
+    padding: 10px 20px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    font-size: 16px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    width: 100px;
+    color: #666;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    flex: 0 1 auto;
+    width: auto;
+}
+
+.form-group input[name="beam_angle"],
+.form-group input[name="power"],
+.form-group input[name="voltage"],
+.form-group input[name="cri"],
+.form-group input[name="weight"],
+.form-group input[name="ip_rating"] {
+    width: 100px;
+}
+
+.form-group input[name="color_temp"],
+.form-group input[name="luminous_flux"] {
+    width: 150px;
+}
+
+.form-group input[name="product_name"],
+.form-group input[name="model_number"],
+.form-group input[name="dimensions"] {
+    width: 250px;
+}
+
+.form-group input[type="file"] {
+    width: 250px;
+    padding: 4px;
+}
+
+.form-group input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+.form-group .unit {
+    margin-left: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.generate-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.generate-btn:hover {
+    background: #45a049;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.form-container {
+    flex: 0.8;
+    min-width: 450px;
+}
+
+.preview-container {
+    flex: 1.2;
+    min-width: 600px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.preview-header {
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 15px;
+}
+
+.preview-header h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.preview-content {
+    padding: 15px;
+    background: white;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.preview-main {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+}
+
+.preview-image {
+    flex: 0 0 300px;
+    background: #fff;
+}
+
+.image-container {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.preview-params {
+    flex: 0 0 400px;
+}
+
+.preview-params table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.preview-params td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.preview-params td:first-child {
+    background: #f5f5f5;
+    width: 100px;
+    white-space: nowrap;
+    color: #666;
+}
+
+.preview-params td:last-child {
+    color: #333;
+}
+
+.preview-beam {
+    flex: 0 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.preview-beam canvas {
+    width: 100px;
+    height: 100px;
+}
+
+.preview-header-section {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.brand-logo {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.brand-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-name {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.product-model {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 页脚样式 */
+.preview-footer {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.footer-left, .footer-right {
+    max-width: 45%;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #333;
+}
+
+.copyright {
+    font-weight: normal;
+}
+
+.page-number {
+    font-weight: normal;
+} 
